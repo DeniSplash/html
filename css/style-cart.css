@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --black-bkg: #222222;
   --pink-bkg: #F1E4E6;
@@ -8,9 +7,18 @@
   --gray-color: #9F9F9F;
 }
 
-/* РЎС‚РёР»РёР·Р°С†РёСЏ main */
-/* РЎС‚РёР»РёР·Р°С†РёСЏ registration */
-.registration {
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.shopping-cart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,7 +27,7 @@
   min-height: 148px;
 }
 
-.registration__title {
+.shopping-cart__title {
   padding: 60px 0 60px 0;
   font-size: 24px;
   font-weight: 400;
@@ -28,17 +36,7 @@
   text-transform: uppercase;
 }
 
-.reg-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  /* flex-direction: column; */
-}
-
-.reg-form__input {
+.cart__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,17 +44,47 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* flex-grow: 1; */
+  gap: 40px;
 }
 
-.reg-form__input-title {
+.cart__item {
+  height: 306px;
+  width: 652px;
+  background-color: var(--white-color);
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart__shipping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cart__shipping__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cart__shipping__input-title {
   font-size: 16px;
   font-weight: 300;
   line-height: 19px;
   margin-bottom: 21px;
 }
 
-.reg-form__input-edit {
+.cart__shipping__input-edit {
   height: 45px;
   width: 360px;
   border-radius: 0px;
@@ -69,29 +97,18 @@
   outline: none;
 }
 
-.reg-form__input-edit:hover {
+.cart__shipping__input-edit:hover {
   border: 1px solid var(--pink-color);
 }
 
-.reg-form__gender {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 160px;
-  margin: 6px 0 32px 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.reg-form__input-subtitle {
+.cart__shipping__input-subtitle {
   font-size: 16px;
   font-weight: 300;
   line-height: 19px;
   margin-bottom: 21px;
 }
 
-.reg-form__input-text {
+.cart__shipping__input-text {
   width: 360px;
   font-size: 13px;
   font-weight: 300;
@@ -99,7 +116,7 @@
   margin-bottom: 39px;
 }
 
-.reg-form__button {
+.cart__shipping__button {
   height: 50px;
   width: 167px;
   border: 0px;
@@ -113,53 +130,12 @@
   margin-bottom: 96px;
 }
 
-.reg-form__button:hover,
-.reg-form__button:focus {
+.cart__shipping__button:hover,
+.cart__shipping__button:focus {
   background-color: var(--gray-color);
 }
 
-.reg-form__button:active {
+.cart__shipping__button:active {
   background-color: var(--pink-color);
 }
-
-.reg-form__perks-title {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 29px;
-  margin-bottom: 22px;
-}
-
-.reg-form__perks-text {
-  width: 652px;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 29px;
-  margin-bottom: 22px;
-}
-
-.reg-form__perks-list {
-  margin: 0;
-  list-style: none;
-}
-
-.reg-form__perks-item {
-  position: relative;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 29px;
-  margin-bottom: 16px;
-  padding-left: 30px;
-}
-
-.reg-form__perks-item:before {
-  content: '';
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  background-image: url(../img/ugly.svg);
-  background-size: 15px 15px;
-  z-index: 0;
-}
-/*# sourceMappingURL=style-registration.css.map */
+/*# sourceMappingURL=style-cart.css.map */

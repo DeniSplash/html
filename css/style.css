@@ -569,6 +569,55 @@ body {
   text-align: center;
 }
 
+.footer__subscribe-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer__subscribe-subtext {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.footer__subscribe-edibutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__subscribe-edit {
+  position: relative;
+  height: 49px;
+  width: 323px;
+  border-radius: 0px;
+  display: block;
+  border-radius: 20px;
+  border: none;
+  text-indent: 16px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.footer__subscribe-button {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: center;
+  color: var(--white-color);
+  display: block;
+  -webkit-transform: translate(250%, 0%);
+          transform: translate(250%, 0%);
+}
+
 .footer__info {
   background-color: var(--black-bkg);
 }

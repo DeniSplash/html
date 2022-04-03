@@ -7,19 +7,20 @@
     --gray-color: #9F9F9F;
 }
 
+.cart {
+    display: flex;
+    align-content: space-between;
+    align-items: flex-start;
+}
 
-/* РЎС‚РёР»РёР·Р°С†РёСЏ main */
-
-/* РЎС‚РёР»РёР·Р°С†РёСЏ registration */
-
-.registration {
+.shopping-cart {
     display: flex;
     margin-bottom: 65px;
     background-color: var(--pink-bkg);
     min-height: 148px;
 }
 
-.registration__title {
+.shopping-cart__title {
     padding: 60px 0 60px 0;
     font-size: 24px;
     font-weight: 400;
@@ -28,26 +29,43 @@
     text-transform: uppercase;
 }
 
-.reg-form {
-    display: flex;
-    justify-content: space-between;
-    /* flex-direction: column; */
-}
-
-.reg-form__input {
+.cart__list {
     display: flex;
     flex-direction: column;
-    /* flex-grow: 1; */
+    gap: 40px;
 }
 
-.reg-form__input-title {
+.cart__item {
+    height: 306px;
+    width: 652px;
+    background-color: var(--white-color);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    display: flex;
+}
+
+.cart__item-img {
+    //margin-bottom: 26px;
+}
+
+.cart__shipping {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart__shipping__input {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cart__shipping__input-title {
     font-size: 16px;
     font-weight: 300;
     line-height: 19px;
     margin-bottom: 21px;
 }
 
-.reg-form__input-edit {
+.cart__shipping__input-edit {
     height: 45px;
     width: 360px;
     border-radius: 0px;
@@ -60,25 +78,19 @@
     outline: none;
 }
 
-.reg-form__input-edit:hover {
+.cart__shipping__input-edit:hover {
     border: 1px solid var(--pink-color);
 }
 
-.reg-form__gender {
-    display: flex;
-    width: 160px;
-    margin: 6px 0 32px 0;
-    justify-content: space-between;
-}
 
-.reg-form__input-subtitle {
+.cart__shipping__input-subtitle {
     font-size: 16px;
     font-weight: 300;
     line-height: 19px;
     margin-bottom: 21px;
 }
 
-.reg-form__input-text {
+.cart__shipping__input-text {
     width: 360px;
     font-size: 13px;
     font-weight: 300;
@@ -86,7 +98,7 @@
     margin-bottom: 39px;
 }
 
-.reg-form__button {
+.cart__shipping__button {
     height: 50px;
     width: 167px;
     border: 0px;
@@ -100,53 +112,11 @@
     margin-bottom: 96px;
 }
 
-.reg-form__button:hover,
-.reg-form__button:focus {
+.cart__shipping__button:hover,
+.cart__shipping__button:focus {
     background-color: var(--gray-color);
 }
 
-.reg-form__button:active {
+.cart__shipping__button:active {
     background-color: var(--pink-color);
-}
-
-.reg-form__perks-title {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 29px;
-    margin-bottom: 22px;
-}
-
-.reg-form__perks-text {
-    width: 652px;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 29px;
-    margin-bottom: 22px;
-}
-
-.reg-form__perks-list {
-    margin: 0;
-    list-style: none;
-}
-
-.reg-form__perks-item {
-    position: relative;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 29px;
-    margin-bottom: 16px;
-    padding-left: 30px;
-}
-
-.reg-form__perks-item:before {
-    content: '';
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    background-image: url(../img/ugly.svg);
-    background-size: 15px 15px;
-    z-index: 0;
-
 }
