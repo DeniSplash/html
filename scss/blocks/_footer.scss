@@ -1,151 +1,154 @@
-.footer__subscribe {
-    background-image: url(../img/subscribe.jpg);
-    display: flex;
-    background-size: 100%;
-}
+.footer {
 
-.footer__subscribe-wrp {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    &__subscribe {
+        background-image: url(../img/subscribe.jpg);
+        display: flex;
+        background-size: 100%;
+    }
 
-.footer__subscribe-img {
-    margin-top: 87px;
-    margin-bottom: 18px;
-    margin-left: 118px;
-}
+    &__subscribe-wrp {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.footer__subscribe-text {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: capitalize;
-    margin-bottom: 126px;
-    width: 360px;
-    text-align: center;
-}
+    &__subscribe-img {
+        margin-top: 87px;
+        margin-bottom: 18px;
+        margin-left: 118px;
+    }
 
-.footer__subscribe-italtext {
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
-}
+    &__subscribe-text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: capitalize;
+        margin-bottom: 126px;
+        width: 360px;
+        text-align: center;
+    }
 
-.footer__subscribe-title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 38px;
-    text-align: center;
-    text-transform: uppercase;
-}
+    &__subscribe-italtext {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+    }
 
-.footer__subscribe-subtext {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: center;
-    padding-bottom: 32px;
-}
+    &__subscribe-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 38px;
+        text-align: center;
+        text-transform: uppercase;
+    }
 
-.footer__subscribe-edibutton {
-    display: flex;
-}
+    &__subscribe-subtext {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        padding-bottom: 32px;
+    }
 
-.footer__subscribe-edit {
-    position: relative;
-    height: 46px;
-    width: 320px;
-    border-radius: 0px;
-    display: block;
-    border-radius: 20px;
-    border: 1px solid $white-color;
-    text-indent: 16px;
-    outline: none;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-}
+    &__subscribe-edibutton {
+        display: flex;
+    }
 
-.footer__subscribe-edit:hover,
-.footer__subscribe-edit:focus {
-    border: 1px solid $pink-color;
-}
+    &__subscribe-edit {
+        position: relative;
+        height: 45px;
+        width: 320px;
+        border-radius: 0px;
+        display: block;
+        border-radius: 20px;
+        border: 1px solid $white-color;
+        text-indent: 16px;
+        outline: none;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
 
-.footer__subscribe-button {
-    position: absolute;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    text-align: center;
-    color: $white-color;
-    display: block;
-    transform: translate(230%, 0%);
-}
+    &__subscribe-edit:hover,
+    &__subscribe-edit:focus {
+        border: 1px solid $pink-color;
+    }
 
-.footer__subscribe-button:hover+.footer__subscribe-button-text,
-.footer__subscribe-button:focus+.footer__subscribe-button-text {
-    color: $black-bkg;
-}
+    &__subscribe-button {
+        position: absolute;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        color: $white-color;
+        display: block;
+        transform: translate(230%, 0%);
+    }
 
-.footer__subscribe-button-text {
-    position: absolute;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    color: $white-color;
-    text-align: center;
-    z-index: 1;
-    transform: translate(410%, 80%);
-}
+    &__subscribe-button:hover+&__subscribe-button-text,
+    &__subscribe-button:focus+&__subscribe-button-text {
+        color: $black-bkg;
+    }
 
-.footer__subscribe-button-text:focus,
-.footer__subscribe-button-text:hover {
-    color: $black-bkg;
-    cursor: pointer;
-}
+    &__subscribe-button-text {
+        position: absolute;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: $white-color;
+        text-align: center;
+        z-index: 1;
+        transform: translate(410%, 80%);
+    }
 
-.footer__info {
-    background-color: $black-bkg;
-}
+    &__subscribe-button-text:focus,
+    &__subscribe-button-text:hover {
+        color: $black-bkg;
+        cursor: pointer;
+    }
 
-.footer__info-wrp {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    min-height: 75px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-}
+    &__info {
+        background-color: $black-bkg;
+    }
 
-.footer__info-text {
-    /* display: block; */
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    color: #FBFBFB;
-}
+    &__info-wrp {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        min-height: 75px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
 
-.footer__info-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
+    &__info-text {
+        /* display: block; */
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #FBFBFB;
+    }
 
-.footer__info-link:hover .footer__info-img,
-.footer__info-link:focus .footer__info-img {
-    fill: $pink-color;
-}
+    &__info-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
 
-.footer__info-img {
-    fill: $white-color;
+    &__info-link:hover &__info-img,
+    &__info-link:focus &__info-img {
+        fill: $pink-color;
+    }
+
+    &__info-img {
+        fill: $white-color;
+    }
 }

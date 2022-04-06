@@ -2,34 +2,34 @@
     display: flex;
     margin-bottom: 65px;
     background-color: $pink-bkg;
-}
 
-.brand__title-wrp {
-    flex-grow: 1;
-    padding: 0 0 0 92px;
-    display: flex;
-    align-items: center;
-}
+    &__title-wrp {
+        flex-grow: 1;
+        padding: 0 0 0 92px;
+        display: flex;
+        align-items: center;
+    }
 
-.brand__img {
-    width: 800px;
-    height: 765px;
-}
+    &__img {
+        width: 800px;
+        height: 765px;
+    }
 
-.brand__title {
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 58px;
-    text-transform: uppercase;
-}
+    &__title {
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 58px;
+        text-transform: uppercase;
+    }
 
-.brand__title-lower {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 38px;
-    display: block;
-}
+    &__title-lower {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38px;
+        display: block;
+    }
 
-.brand__title-pink {
-    color: $pink-color;
+    &__title-pink {
+        color: $pink-color;
+    }
 }
