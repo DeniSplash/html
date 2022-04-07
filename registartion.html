@@ -161,27 +161,39 @@
         <div class="reg-form container">
             <form class="reg-form__input" action="" method="GET">
                 <fieldset>
-                    <p class="reg-form__input-title">Your Name</p>
-                    <input class="reg-form__input-edit" type="text" placeholder="First Name">
-                    <input class="reg-form__input-edit" type="text" placeholder="Last Name">
+                    <legend class="reg-form__input-title">Your Name</legend>
+                    <label>
+                        <input class="reg-form__input-edit" type="text" placeholder="First Name">
+                        <span class="visually-hidden">First Name</span>
+                    </label>
+                    <label>
+                        <input class="reg-form__input-edit" type="text" placeholder="Last Name">
+                        <span class="visually-hidden">Last Name</span>
+                    </label>
                     <div class="reg-form__gender">
                         <div>
                             <input type="radio" id="horns" name="horns">
                             <label class="reg-form__input-subtitle" for="horns">Male</label>
+                            <span class="visually-hidden">Male</span>
                         </div>
                         <div>
                             <input type="radio" id="horns" name="horns">
                             <label class="reg-form__input-subtitle" for="horns">Female</label>
+                            <span class="visually-hidden">Female</span>
                         </div>
                     </div>
-                    <p class="reg-form__input-subtitle">Login details</p>
-                    <input class="reg-form__input-edit" type="text" placeholder="Email">
-                    <input class="reg-form__input-edit" type="text" placeholder="Password">
+                </fieldset>
+                <fieldset>
+                    <legend class="reg-form__input-subtitle">Login details</legend>
+                    <label class="visually-hidden" for="email">email</label>
+                    <input class="reg-form__input-edit" type="email" placeholder="Email">
+                    <label class="visually-hidden" for="password">password</label>
+                    <input class="reg-form__input-edit" type="password" placeholder="Password">
                     <p class="reg-form__input-text">Please use 8 or more characters, with at least 1 number and a
                         mixture of
                         uppercase and lowercase
                         letters</p>
-                    <button class="reg-form__button">JOIN NOW</button>
+                    <button class="reg-form__button" type="button">JOIN NOW</button>
                 </fieldset>
             </form>
             <div class="reg-form__perks">
@@ -218,7 +230,13 @@
                             class="footer__subscribe-italtext">a
                             pulvinar purus condimentum“</span></p>
                 </div>
-                <div class="footer__subscribe-form">форма</div>
+                <div class="footer__subscribe-edibutton">
+                    <input class="footer__subscribe-edit" type="text" placeholder="Enter Your Email">
+                    <input class="footer__subscribe-button" id="image" type="image" src="./img/subscrable_button.png"
+                        alt="subscribe">
+                    <span class="footer__subscribe-button-text">Subscribe</span>
+                    </input>
+                </div>
             </div>
         </div>
         <div class="footer__info">
