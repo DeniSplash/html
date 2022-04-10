@@ -17,6 +17,8 @@
 .cart {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 16px 32px 16px;
 
     &__item-title {
         font-size: 24px;

@@ -20,6 +20,14 @@ body {
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
+
+    // @media(max-width: $desctop-width) {
+    //     max-width: $desctop-width;
+    // }
+
+    // @media(max-width: $tablet-width) {
+    //     max-width: $tablet-width;
+    // }
 }
