@@ -1,6 +1,4 @@
 .registration {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-bottom: 65px;
     background-color: $pink-bkg;
@@ -13,26 +11,21 @@
         line-height: 29px;
         color: $pink-color;
         text-transform: uppercase;
+        display: block;
     }
 }
 
 .reg-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 16px 0 16px;
 
     &__input {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
         flex-direction: column;
         /* flex-grow: 1; */
+        width: 360px;
     }
 
     &__input-title {
@@ -108,6 +101,20 @@
         background-color: $pink-color;
     }
 
+
+    &__perks {
+
+        padding: 0 16px 0 16px;
+
+        @include tablet {
+            //width: 354px;
+        }
+
+        @include mobile {
+            //width: 354px;
+        }
+    }
+
     &__perks-title {
         font-size: 24px;
         font-weight: 300;
@@ -116,7 +123,7 @@
     }
 
     &__perks-text {
-        width: 652px;
+        max-width: 652px;
         font-size: 24px;
         font-weight: 300;
         line-height: 29px;

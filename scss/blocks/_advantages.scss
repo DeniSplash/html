@@ -8,12 +8,18 @@
   }
 
   &__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+
+    @include tablet {
+      margin: 0 16px 0 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include mobile {}
   }
 
   &__item {
@@ -21,6 +27,13 @@
     align-items: center;
     flex-direction: column;
     margin: 104px 0 104px 0;
+
+    @include tablet {
+      flex-wrap: wrap;
+      margin: 40px 0 40px 0;
+      justify-content: center;
+    }
+
   }
 
   &__item-img {
